@@ -6,7 +6,7 @@ let Book = {
 	search: function() {
 		let searchInfo = document.querySelector('#book-search').value;
 		let search = new XMLHttpRequest();
-		let apiUrl = `http://openlibrary.org/search.json?q=${encodeURIComponent(searchInfo)}&page=1`;
+		let apiUrl = `https://openlibrary.org/search.json?q=${encodeURIComponent(searchInfo)}&page=1`;
 		search.open('GET', apiUrl, true);
 		search.send();
 
