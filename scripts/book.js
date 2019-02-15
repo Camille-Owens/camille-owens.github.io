@@ -125,6 +125,20 @@ function BookSearch() {
 			return;
 		}
 	}
+	this.updateFavorite = (Book) => {
+		//first we update the favorites
+		let favoriteBooks = localStorage.getItem('favoriteBooks') != null ? JSON.parse(localStorage.getItem('favoriteBooks')) : [];
+
+		let foundBook = favoriteBooks.filter(b => b.apiId === Book.apiId);
+		if (foundBook.length < 1) {
+			return;
+		} else {
+			let updatedFavoriteBooks = favoriteBooks.filter(b => b.apiId !== Book.apiId);
+			updatedFavoriteBooks.push(Book.formatForStorage());
+			localStorage.setItem('favoriteBooks', JSON.stringify(updatedFavoriteBooks));
+			this.updateFavoritesList();
+		}
+	}
 	this.updateFavoritesList = () => {
 		let favoriteBooks = JSON.parse(localStorage.getItem('favoriteBooks'));
 
@@ -157,6 +171,7 @@ function BookSearch() {
 				document.body.addEventListener('change', (e) => {
 					if (e.target && e.target.id == `${Book.apiId}-rating-input`) {
 						Book.setRating(e.target.value);
+						this.updateFavorite(Book);
 					}
 				})
 			}
