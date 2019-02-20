@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<title>JSON parse and JSON stringify</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="../styles/bookAppStyles.css">
+	</head>
+
+	<body class="fade-in">
+		<!--
+			JSON parse and JSON stringify
+				1.	Book search (give example)
+				2.	Get the book search data from the book API
+				3.	JSON.parse(JSON.stringify(the book data))
+				4.	Loop through the data to print it as results to the search
+				5.	Add a 'favorite' button to each result
+				6.	JSON.stringify and Add the 'favorites' to local storage
+		-->
+		<div id="app">
+			<header>
+				<h1>Bookshelf</h1>
+				<nav>
+					<ul>
+						<li><a href="./favoriteBooks.html">Favorites</a><span class="badge hidden">New</span></li>
+						<li><a href="./bookSearch.html">Search</a></li>
+					</ul>
+				</nav>
+			</header>
+			<main>
+				<section id="search-books">
+					<h3>Book Search</h3>
+					<p>Try it with one of the following, or a book of your own!</p>
+					<ul id="search-books-options">
+						<li>Harry Potter and the Sorcerer's Stone</li>
+						<li>The Lord of the Rings</li>
+						<li>Etiquette and Espionage</li>
+						<li>Braving the Wilderness</li>
+					</ul>
+					<form>
+						<input id="book-search" type="text" name="book-search">
+						<button type="button" onClick="bookSearch.search()">Search</button>
+					</form>
+					<section id="search-results" class="hidden">
+						<h4>Search Results for <span id="search-value"></span></h4>
+						<div id="search-results-list"></div>
+					</section>
+				</section>
+				
+				
+			</main>
+			<footer>
+				<p>Book data is from <img src="../images/openlibrary-logo-tighter.svg" alt="Open Library logo" height="20px"></p>
+			</footer>
+		</div>
+		<script src="../scripts/bookApp.js"></script>
+	</body>
+</html>

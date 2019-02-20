@@ -1,0 +1,175 @@
+/*
+	tan: F7EDDC;
+	dark blue: 3E3C5E;
+	red: B54F40;
+	dark gold: 8B7752;
+	dark brown: 342624;
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+	width: 500px;
+	margin: auto;
+	color: #342624;
+	font-family: 'Crimson Text', serif;
+}
+
+h1 {
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 16px;
+	text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Fredericka the Great', cursive;
+	font-weight: lighter;
+}
+
+header {
+	background-color: #F7EDDC;
+	margin-top: 32px;
+	padding-top: 16px;
+	border-top-right-radius: 24px 24px;
+	border-top-left-radius: 24px 24px;
+	
+}
+
+nav {
+	font-size: 1.5em;
+}
+
+nav ul {
+	list-style-type: none;
+	padding-inline-start: 0px;
+	margin-block-start: 0px;
+    margin-block-end: 0px;
+    width: 100%;
+    border-top: 1px solid #8B7752;
+    border-bottom: 1px solid #8B7752;
+}
+
+nav ul li {
+	display: inline-block;
+	/*width: 49%;*/
+	margin-left: 24px;
+	margin-right: 24px;
+}
+
+.badge {
+	font-family: 'Roboto', sans-serif;
+	font-size: .4em;
+	text-transform: uppercase;
+	background-color: #8B7752;
+	color: #F7EDDC;
+	padding: 4px;
+	border-radius: 6px 6px;
+	/*margin-left: 8px;*/
+	/*margin-top: -12px;*/
+	position: relative;
+	top: -8px;
+	left: 4px;
+}
+
+nav a {
+	text-decoration: none;
+
+}
+
+nav a:link, nav a:visited {
+	color: #342624;
+}
+
+nav a:hover {
+	color: #3E3C5E;
+}
+
+nav a:active {
+	color: #ffffff;
+}
+
+main {
+	background-color: #F7EDDC;
+	padding: 24px;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.favorited-search-result {
+	color: #AA9C81;
+}
+
+.rating {
+	margin-left: 16px;
+}
+
+.rating-input {
+	width: 10%;
+	height: 18px;
+}
+
+.search-result, .favorite-result {
+	/*margin-bottom: 8px;*/
+	padding: 8px;
+	border-bottom: 1px dotted #8B7752;
+}
+
+.search-result-title {
+	width: 80%;
+	display: inline-block;
+}
+
+.btn-primary {
+	background-color: #3E3C5E;
+	color: #F7EDDC;
+	padding: 8px;
+	margin-left: 8px;
+	border: 1px solid #3E3C5E;
+	border-radius: 4px 4px;
+}
+
+.btn-secondary {
+	background-color: #342624;
+	color: #F7EDDC;
+	padding: 8px;
+	margin-left: 8px;
+	border: 1px solid #342624;
+	border-radius: 4px 4px;
+}
+
+.favorite-book-title {
+	width: 70%;
+	display: inline-block;
+}
+
+.btn-info {
+	background-color: #F7EDDC;
+	color: #342624;
+	padding: 8px;
+	margin-left: 8px;
+	border: 1px solid #342624;
+	border-radius: 4px 4px;
+}
+
+.have-read {
+	background-color: #B54F40;
+	border: 1px solid #B54F40;
+	color: #F7EDDC;
+}
+
+footer {
+	background-color: #F7EDDC;
+	margin-bottom: 32px;
+	/*padding-left: 24px;*/
+	text-align: center;
+	font-size: .8em;
+	padding-bottom: 16px;
+    border-top: 1px solid #8B7752;
+	border-bottom-right-radius: 24px 24px;
+	border-bottom-left-radius: 24px 24px;
+}

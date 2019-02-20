@@ -5,7 +5,3 @@ table {
 tr:nth-child(even) {
 	background: #DAE4F0;
 }
-
-.hidden {
-	visibility: hidden;
-}
