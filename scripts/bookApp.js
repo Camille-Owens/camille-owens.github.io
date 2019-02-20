@@ -170,7 +170,7 @@ function BookSearch() {
 			console.log('updatedFavoriteBooks', updatedFavoriteBooks);
 			// updatedFavoriteBooks.push(Book.formatForStorage());
 			localStorage.setItem('favoriteBooks', JSON.stringify(updatedFavoriteBooks));
-			// this.updateFavoritesList();
+			this.updateFavoritesList();
 		}
 	}
 	this.updateFavoritesList = () => {
