@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en-us">
 	<head>
-		<title>JSON parse and JSON stringify</title>
+		<title>Book Search</title>
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" type="text/css" href="../styles/bookAppStyles.css">
 	</head>
 
 	<body class="fade-in">
-		<!--
-			JSON parse and JSON stringify
-				1.	Book search (give example)
-				2.	Get the book search data from the book API
-				3.	JSON.parse(JSON.stringify(the book data))
-				4.	Loop through the data to print it as results to the search
-				5.	Add a 'favorite' button to each result
-				6.	JSON.stringify and Add the 'favorites' to local storage
-		-->
 		<div id="app">
 			<header>
+				<div id="ribbon">
+					<h3>
+						Books are great!
+					</h3>
+				</div>
+				<div id="ribbon-tail-left"></div>
+				<div id="ribbon-tail-right"></div>
 				<h1>Bookshelf</h1>
 				<nav>
 					<ul>
@@ -25,6 +23,7 @@
 						<li><a href="./bookSearch.html">Search</a></li>
 					</ul>
 				</nav>
+				
 			</header>
 			<main>
 				<section id="search-books">

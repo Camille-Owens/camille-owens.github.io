@@ -1,0 +1,61 @@
+/*normal scale"></div>
+		<div class="normal scaleX"></div>
+		<div class="normal scaleY"></div>
+		<div class="normal skewX"></div>
+		<div class="normal skewY"></div>
+		<div class="normal skewXandY"></div>
+		<div class="normal rotate"></div>
+		<div class="normal rotateX"></div>
+		<div class="normal rotateY"></div>
+		<div class="normal rotateZ"></div>
+		<div class="normal translate"></div>
+		<div class="normal translateX"></div>
+		<div class="normal translateY"></div>
+		<div class="normal matrix"></div>
+		<div class="normal translate3d"></div>
+		<div class="normal scale3d"></div>
+		<div class="normal rotate3d"></div>
+		<div class="normal perspective*/
+
+body {
+	width: 500px;
+	margin: auto;
+}
+
+div {
+	margin-bottom: 200px;
+}
+
+.normal {
+	background-color: blue;
+	width: 100px;
+	height: 100px;
+	color: white;
+	border: 3px solid red;
+}
+
+.scale { transform: scale(2, -2); }
+.scaleX { transform: scaleX(2); }
+.scaleY { transform: scaleY(-2); }
+
+.skewX { transform: skewX(25deg); }
+.skewY { transform: skewY(25deg); }
+.skewXandY {
+	transform: skewX(25deg);
+	transform: skewY(50deg)
+}
+
+.rotate { transform: rotate(50deg); }
+.rotateX { transform: rotateX(50deg); }
+.rotateY { transform: rotateY(50deg); }
+.rotateZ { transform: rotateZ(50deg); }
+
+.translate { transform: translate(200px, 200px); }
+.translateX { transform: translateX(200px); }
+.translateY { transform: translateY(200px); }
+
+.matrix { transform: matrix(0.7071067811865475, 0.7071067811865476, -0.7071067811865476, 0.7071067811865475, -0.7071067811865497, 34.648232278140824) }
+
+.translate3d { transform: translate3d(50px, 20px, 50px); }
+.scale3d { transform: scale3d(2, 3, 4); }
+.rotate3d { transform: rotate3d(30deg, 60deg, 25deg); }

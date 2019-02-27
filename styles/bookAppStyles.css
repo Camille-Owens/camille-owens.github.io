@@ -21,7 +21,8 @@ h1 {
 	padding: 0px;
 	margin: 0px;
 	margin-bottom: 16px;
-	text-align: center;
+	margin-left: 24px;
+	/*text-align: center;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,6 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
+	position: relative;
 	background-color: #F7EDDC;
 	margin-top: 32px;
 	padding-top: 16px;
@@ -172,4 +174,41 @@ footer {
     border-top: 1px solid #8B7752;
 	border-bottom-right-radius: 24px 24px;
 	border-bottom-left-radius: 24px 24px;
+}
+
+#ribbon {
+	position: absolute;
+	background: #B54F40;
+	height: 100px;
+	width: 80px;
+	right: 50px;
+	top: 0px;
+	color: #F7EDDC;
+	z-index: 7;
+}
+
+#ribbon-tail-left {
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	right: 80px;
+	background-color: #B54F40;
+	transform: skewY(-30deg) translate(0px, 50px);
+	z-index: 5;
+}
+
+#ribbon-tail-right {
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	right: 50px;
+	background-color: #B54F40;
+	transform: skewY(30deg) translate(0px, 50px);
+	z-index: 6;
+}
+
+#ribbon h3 {
+	margin: 12px;
+   	text-align: center;
+   	z-index: 8;
 }
