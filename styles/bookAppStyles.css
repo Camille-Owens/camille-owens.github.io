@@ -177,7 +177,7 @@ footer {
 }
 
 #ribbon {
-	position: absolute;
+	position: absolute; 
 	background: #B54F40;
 	height: 100px;
 	width: 80px;
