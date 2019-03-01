@@ -107,7 +107,16 @@ main {
 }
 
 .rating {
+	display: inline-block;
+	float: right;
 	margin-left: 16px;
+	/*margin-top: 10px;*/
+}
+
+.star-canvas {
+	/*width: 30px;
+	height: 30px;*/
+	/*background-color: blue;*/
 }
 
 .rating-input {
@@ -212,3 +221,5 @@ footer {
    	text-align: center;
    	z-index: 8;
 }
+
+
