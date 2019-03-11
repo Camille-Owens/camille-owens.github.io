@@ -43,6 +43,7 @@ function FavoriteBook(title, author, publishDate, rating = 0, apiId, haveRead = 
 		unFavoriteButton.type = 'button';
 		unFavoriteButton.innerHTML = 'Remove';
 		unFavoriteButton.classList.add('btn-secondary');
+		unFavoriteButton.classList.add('fade-in-transition')
 		listItem.appendChild(unFavoriteButton);
 
 		let haveReadButton = document.createElement('button');
@@ -50,6 +51,7 @@ function FavoriteBook(title, author, publishDate, rating = 0, apiId, haveRead = 
 		haveReadButton.type = 'button';
 		haveReadButton.innerHTML = this.haveRead ? 'Have Read' : 'To Read';
 		haveReadButton.classList.add('btn-info');
+		haveReadButton.classList.add('fade-in-transition');
 		if (this.haveRead) {
 			haveReadButton.classList.add('have-read');
 		}
@@ -193,7 +195,8 @@ function BookSearch() {
 		    		favoriteButton.setAttribute('id', `${book.key}-button`);
 		    		favoriteButton.type = 'button';
 		    		favoriteButton.innerHTML = 'Favorite';
-		    		favoriteButton.classList.add('btn-primary')
+		    		favoriteButton.classList.add('btn-primary');
+		    		favoriteButton.classList.add('fade-in-transition');
 		    		document.getElementById(`${book.key}-book`).appendChild(favoriteButton);
 
 		    		// okay, so I copied this from Stack Overflow because my click event wasn't working, and I wanted to explain what it is doing so that you know

@@ -89,7 +89,8 @@ nav a:link, nav a:visited {
 }
 
 nav a:hover {
-	color: #3E3C5E;
+	color: #8B7752;
+	transition: color 0.25s ease;
 }
 
 nav a:active {
@@ -238,6 +239,15 @@ i {
 	animation-duration: 1s;
 	animation-timing-function: linear;
 
+}
+
+.fade-in-transition {
+	opacity: 0.75;
+}
+
+.fade-in-transition:hover {
+	opacity: 1;
+	transition: opacity 0.25s ease-out;
 }
 
 @keyframes fadeIn {
