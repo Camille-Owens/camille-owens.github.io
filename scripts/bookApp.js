@@ -162,11 +162,15 @@ function BookSearch() {
 		console.log('got this happening');
 	}
 	this.search = () => {
+		let searchResults = document.querySelector('#search-results-list');
+		searchResults.innerHTML = '<div>Loading... <i class="fa fa-spinner"></div>';
 		let searchInfo = document.querySelector('#book-search').value;
 		let search = new XMLHttpRequest();
 		let apiUrl = `https://openlibrary.org/search.json?q=${encodeURIComponent(searchInfo)}&page=1`;
 		search.open('GET', apiUrl, true);
 		search.send();
+
+
 
 		search.onload = () => {
 		    let bookData = JSON.parse(search.responseText);

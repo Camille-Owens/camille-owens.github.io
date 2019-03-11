@@ -15,6 +15,9 @@ body {
 	margin: auto;
 	color: #342624;
 	font-family: 'Crimson Text', serif;
+	animation-name: fadeIn;
+	animation-duration: .75s;
+	animation-timing-function: ease-in-out;
 }
 
 h1 {
@@ -117,6 +120,10 @@ main {
 	/*width: 30px;
 	height: 30px;*/
 	/*background-color: blue;*/
+	/*animation-name: spin;
+	animation-iteration-count: 1;
+	animation-duration: .5s;
+	animation-timing-function: linear;*/
 }
 
 .rating-input {
@@ -220,6 +227,28 @@ footer {
 	margin: 12px;
    	text-align: center;
    	z-index: 8;
+   	animation-name: fadeIn;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+}
+
+i {
+	animation-name: spin;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+
 }
 
 
