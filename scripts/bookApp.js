@@ -309,7 +309,24 @@ function BookSearch() {
 
 
 let bookSearch = new BookSearch();
-// bookSearch.updateFavoritesList();
+
+document.querySelector('header h1').classList.add('bookshelf-title');
+
+	// document.getElementById('title-letter-b').addEventListener('animationend', function(event) {
+		// setTimeout(() => {
+			// event.preventDefault;
+		 //    console.log(event);
+
+		    // let element = document.getElementById('title-letter-e')
+		    // element.className = '';
+		    // element.classList.remove('spinning-letter')
+		    // void element.offsetWidth;
+		 //    element.classList.add('spinning-letter')
+			// }, 3000)
+
+		
+	// }, false );
+// }
 
 
 
